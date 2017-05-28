@@ -20,6 +20,9 @@ please send us bug reports so we can make it better for you
 comment it if you like
 p.s english isn't my first language sorry for any typo or mistake
 
+#Download
+https://sourceforge.net/projects/battery-saver/
+
 # installation
 **clone this repo**<br> 
 **npm install**<br>
