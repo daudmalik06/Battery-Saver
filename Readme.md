@@ -21,7 +21,7 @@ comment it if you like
 p.s english isn't my first language sorry for any typo or mistake
 
 # installation
-clone this repo 
-npm install
-npm start
+**clone this repo**<br> 
+**npm install**<br>
+**npm start**<br>
 thant's it
