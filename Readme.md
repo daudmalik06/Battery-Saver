@@ -1,4 +1,4 @@
-#INTRODUCTION
+# INTRODUCTION
 This will change life of your laptop's battery 
 This app will notify the user to remove the charger when his battery will be fully charged or is about to die.
 
@@ -20,7 +20,7 @@ please send us bug reports so we can make it better for you
 comment it if you like
 p.s english isn't my first language sorry for any typo or mistake
 
-#installation
+# installation
 clone this repo 
 npm install
 npm start
