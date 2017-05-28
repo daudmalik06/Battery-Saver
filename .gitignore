@@ -1,0 +1,7 @@
+node_modules/
+.idea/
+Output/
+release-builds/
+Output/
+innosetupCompleteScript.iss
+testScript.iss

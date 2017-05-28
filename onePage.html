@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Dawood Ikhlaq">
+    <title>Battery Saver</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="css/latoFamily.css" rel="stylesheet">
+    <link href="css/catamaranFamily.css" rel="stylesheet">
+    <link href="css/multiFamily.css" rel="stylesheet">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+    <!-- Theme CSS -->
+    <link href="css/new-age.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script>window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.js');</script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/battery.js"></script>
+    <script src="js/settings.js"></script>
+    <!--save the buzzer file-->
+    <script src="js/buzzConfig.js"></script>
+
+
+    <script src="js/pageConfig.js"></script>
+
+    <script type="text/javascript" src="./node_modules/pnotify/dist/pnotify.js"></script>
+    <link href="./node_modules/pnotify/dist/pnotify.css" media="all" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body class="unselectable" id="page-top" style="overflow-y: hidden">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Battery Saver</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#status">Status</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#settings">Settings</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <header id="status" style="height: 550px;margin-top: 50px">
+        <div class="col-xs-12 text-right" id="startButtonDiv" style="margin-top: 15px;display: none">
+            <label class="switch">
+                <input type="checkbox" onclick="startStop(this)" id="startValue" checked>
+                <div class="slider round">
+                    <span class="buttonValue onText">Off</span>
+                </div>
+            </label>
+        </div>
+        <div class="col-xs-12" style="margin-top: 25px;"></div>
+        <div class="col-xs-6 text-left">Charging:</div>
+        <div class="col-xs-6 chargingStatus text-right"></div>
+        <div class="clearfix"></div>
+        <div class="col-xs-6 text-left">Current Level:</div>
+        <div class="col-xs-6 batteryLevel text-right"></div>
+        <div class="clearfix"></div>
+    </header>
+    <section id="settings" class="features" style="height: 550px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8">
+                    <span>Max Threshold:</span>
+                </div>
+                <div class="col-xs-4 text-right">
+                    <input class="batteryMaxThreshold" type="number" style="width: 50px" value="">
+                </div>
+                <div class="col-xs-12"></div>
+                <div class="col-xs-12"></div>
+                <div class="col-xs-12"></div>
+
+                <div class="col-xs-8">
+                    <span>Min Threshold:</span>
+                </div>
+                <div class="col-xs-4 text-right">
+                    <input class="batteryMinThreshold" type="number" style="width: 50px" value="">
+                </div>
+
+
+                <div class="col-xs-12" style="margin-top: 5px;"></div>
+                <!--toDo-->
+
+                <!--<div class="col-xs-8"">-->
+                    <!--<span>Buzz:</span>-->
+                <!--</div>-->
+                <!--<div class="col-xs-4 text-right">-->
+                    <!--<button style="width: 50px;border-radius: 3px;" class="btn btn-sm btn-success selectFilebutton">Select</button>-->
+                <!--</div>-->
+                <!--<div class="clearfix"></div>-->
+                <!--<div class="errorDiv hidden">-->
+                    <!--<div class="col-xs-12"></div>-->
+                    <!--<div class="col-xs-12"></div>-->
+                    <!--<div class="col-xs-12"></div>-->
+                    <!--<div class="col-xs-12 alert alert-danger">-->
+                        <!--<span class="errorFile">Sorry!! Currently We Support Only Mp3 Format</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+
+
+
+
+                <div class="col-xs-12 text-left">
+                    <button class="batteryThresholdButton btn-danger btn-xs">Save</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact bg-primary">
+        <div class="container">
+            <!--<h2>We <i class="fa fa-heart"></i> new friends!</h2>-->
+            Developed With Love <i style="color: red" class="fa fa-heart"></i> By
+            <h2>Dawood Ikhlaq</h2>
+            <div class="mail">daudmalik06@gmail.com</div>
+            <!--<ul class="list-inline list-social">-->
+                <!--<li class="social-twitter">-->
+                    <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                <!--</li>-->
+                <!--<li class="social-facebook">-->
+                    <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                <!--</li>-->
+                <!--<li class="social-google-plus">-->
+                    <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer maxThresholdFooter navbar-fixed-bottom alert alert-danger text-center" style="margin-bottom:0;display: none">
+                <strong>Please Remove The Charger</strong>
+            </div>
+            <div class="footer minThresholdFooter navbar-fixed-bottom alert alert-danger text-center" style="margin-bottom:0;display: none">
+                <strong>Please Plug In The Charger</strong>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+
+</body>
+</html>
