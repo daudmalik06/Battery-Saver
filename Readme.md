@@ -23,8 +23,21 @@ p.s english isn't my first language sorry for any typo or mistake
 # Download
 https://sourceforge.net/projects/battery-saver/
 
-# installation
-**clone this repo**<br> 
-**npm install**<br>
-**npm start**<br>
-thant's it
+# Installation Instructions:
+
+* Cone the repo: 
+```shell
+git clone https://github.com/daudmalik06/Battery-Saver
+```
+* Install NPM Dependencies:
+```shell
+cd Battery-Saver
+npm install
+```
+
+* Start the app:
+```shell
+npm start
+```
+
+That's it! You should see the electron app starting. Remember to plug / unplug your power cable! :)
