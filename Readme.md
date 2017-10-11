@@ -25,7 +25,7 @@ https://sourceforge.net/projects/battery-saver/
 
 # Installation Instructions:
 
-* Cone the repo: 
+* Clone the repo: 
 ```shell
 git clone https://github.com/daudmalik06/Battery-Saver
 ```
