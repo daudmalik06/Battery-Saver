@@ -1,24 +1,16 @@
 # INTRODUCTION
-This will change life of your laptop's battery 
-This app will notify the user to remove the charger when his battery will be fully charged or is about to die.
+This will improve your laptop’s battery life.
+This app will notify the user to unplug the charger when his/her laptop's battery is fully charged or about to die.
 
-Obviously you have to setup the minimum and maximum threshold of battery level.
+The user will have to set the minimum and maximum battery level threshold. The app can be enabled or disabled by clicking the on/off switch on the main window.
+ 
+I had made a very simple GUI for the app, however, a lot of users messaged me for a better GUI. Due to time constraints from my regular workload I finished this a little later than expected. I apologize for any inconvenience caused.
 
-you can enable or disable the app by clicking on on/off switch on main window.
+I’ve put my best efforts into this project, but now it’s your turn to provide me with some feedback. This is a lightweight app, it requires to be run only once after installation, thereafter it will run automatically on windows startup.
 
-before this i had made very simple gui for this app so many users message me for gui,
-due to my workload i have not much time so i finished this little late sorry for incovenience
-i tried to do my best now its your turn to provide me feedback
+Feel free to contact us.
 
-
-
-it is very light weight app , 
-it require only first time run, following times it will start automatically on windows startup 
-
-feel free to contact us 
-please send us bug reports so we can make it better for you
-comment it if you like
-p.s english isn't my first language sorry for any typo or mistake
+Please send us bug reports, so we can make improvements for you.
 
 # Download
 https://sourceforge.net/projects/battery-saver/
