@@ -1,6 +1,6 @@
 # INTRODUCTION
 This will improve your laptop’s battery life.
-This app will notify the user to unplug the charger when his/her battery is fully charged or about to die.
+This app will notify the user to unplug the charger when his/her laptop's battery is fully charged or about to die.
 
 The user will have to set the minimum and maximum battery level threshold. The app can be enabled or disabled by clicking the on/off switch on the main window.
  
